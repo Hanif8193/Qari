@@ -44,17 +44,6 @@ st.title("انٹرنیشنل قراء")
 
 
 
-# List of video file names
-video_files = ["Hamdi.mp4", "Abdullah.mp4", "Reja.mp4", "Wajee.mp4"]
-
-# Create columns for videos (adjust number of columns as needed)
-cols = st.columns(len(video_files))
-
-# Display videos in separate columns
-for idx, video_file in enumerate(video_files):
-    with open(video_file, "rb") as file:
-        video_bytes = file.read()
-        cols[idx].video(video_bytes)
-
-
-
+x=open("Hamdi.mp4","rb")
+vi=x.read()
+st.video(vi)
