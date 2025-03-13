@@ -1,11 +1,10 @@
 import streamlit as st
-
+from pytube import YouTube
 # For Urdu font support
 from PIL import ImageFont
-from pytube import YouTube
+
 # Load Jameel Noori Nastaliq font
 font_path = "path/to/jameel_noori_nastaliq.ttf"  
-
 # Configure font settings
 font_settings = {
     "weight": 400,
@@ -46,4 +45,16 @@ st.title("انٹرنیشنل قراء")
 
 x=open("Hamdi.mp4","rb")
 vi=x.read()
+st.video(vi)
+
+x1=open("Reja.mp4","rb")
+vi=x1.read()
+st.video(vi)
+
+x2=open("Wajee.mp4","rb")
+vi=x2.read()
+st.video(vi)
+
+x3=open("Abdullah.mp4","rb")
+vi=x3.read()
 st.video(vi)
