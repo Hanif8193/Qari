@@ -1,25 +1,20 @@
 import streamlit as st
 from pytube import YouTube
-# For Urdu font support
 from PIL import ImageFont
 
 # Load Jameel Noori Nastaliq font
-font_path = "path/to/jameel_noori_nastaliq.ttf"  
-# Configure font settings
-font_settings = {
-    "weight": 400,
-    "subset": "latin"
-}
+font_path = "path/to/jameel_noori_nastaliq.ttf"
 
-st.title(" سنی جماعت القرآن پاکستان")
+# Configure font settings (optional, as Streamlit doesn’t natively support custom fonts)
+# font_settings = {
+#     "weight": 400,
+#     "subset": "latin"
+# }
+
+st.title("سنی جماعت القرآن پاکستان")
 st.image("qari.png", caption="قاری عنایت اللہ سیالوی")
 
 st.title("قاری عنایت اللہ سیالوی صاحب کے صاحبزادگان")
-
-
-
-# Title
-
 
 # Create columns for a flexible layout
 col1, col2, col3, col4 = st.columns(4)
@@ -36,29 +31,30 @@ with col3:
 
 with col4:
     st.image("Pic4.png", caption="قاری حنظلہ سیالوی")
-    # Add spacing
+
+# Add spacing
 st.markdown("<br><br>", unsafe_allow_html=True)
 
 st.title("انٹرنیشنل قراء")
 
+# Display videos
+st.header("حمدی کنجو")
+with open("Hamdi.mp4", "rb") as x:
+    vi = x.read()
+    st.video(vi)
 
-st.header("حمدی کنجو  ")
-x=open("Hamdi.mp4","rb")
-vi=x.read()
-st.video(vi)
-
-
-st.header("قاری رجا ایوب  ")
-x1=open("Reja.mp4","rb")
-vi=x1.read()
-st.video(vi)
+st.header("قاری رجا ایوب")
+with open("Reja.mp4", "rb") as x1:
+    vi = x1.read()
+    st.video(vi)
 
 st.header("وجی دیوان")
-x2=open("Wajee.mp4","rb")
-vi=x2.read()
-st.video(vi)
+with open("Wajee.mp4", "rb") as x2:
+    vi = x2.read()
+    st.video(vi)
 
 st.header("شیخ عبداللہ")
-x3=open("Abdullah.mp4","rb")
-vi=x3.read()
-st.video(vi)
+with open("Abdullah.mp4", "rb") as x3:
+    vi = x3.read()
+    st.video(vi)
+
