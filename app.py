@@ -42,19 +42,23 @@ st.markdown("<br><br>", unsafe_allow_html=True)
 st.title("انٹرنیشنل قراء")
 
 
-
+st.header("حمدی کنجو  ")
 x=open("Hamdi.mp4","rb")
 vi=x.read()
 st.video(vi)
 
+
+st.header("قاری رجا ایوب  ")
 x1=open("Reja.mp4","rb")
 vi=x1.read()
 st.video(vi)
 
+st.header("وجی دیوان")
 x2=open("Wajee.mp4","rb")
 vi=x2.read()
 st.video(vi)
 
+st.header("شیخ عبداللہ")
 x3=open("Abdullah.mp4","rb")
 vi=x3.read()
 st.video(vi)
