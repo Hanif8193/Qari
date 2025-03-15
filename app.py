@@ -1,3 +1,4 @@
+
 import streamlit as st
 font_path = "path/to/jameel_noori_nastaliq.ttf"
 st.title("سنی جماعت القرآن پاکستان")
@@ -10,7 +11,7 @@ col1, col2, col3, col4 = st.columns(4)
 
 # Add images and captions in columns
 with col1:
-    st.image("pic1.png", caption="قاری بلال سیالوی")
+    st.image("Pic1.png", caption="قاری بلال سیالوی")
 
 with col2:
     st.image("Pic2.png", caption="قاری اویس سیالوی")
