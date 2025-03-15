@@ -1,18 +1,5 @@
 import streamlit as st
-from pytube import YouTube
-from PIL import ImageFont
-import os
-st.write(os.listdir())
-
-# Load Jameel Noori Nastaliq font
 font_path = "path/to/jameel_noori_nastaliq.ttf"
-
-# Configure font settings (optional, as Streamlit doesn’t natively support custom fonts)
-# font_settings = {
-#     "weight": 400,
-#     "subset": "latin"
-# }
-
 st.title("سنی جماعت القرآن پاکستان")
 st.image("qari.png", caption="قاری عنایت اللہ سیالوی")
 
