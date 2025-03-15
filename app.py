@@ -1,7 +1,7 @@
 
 import streamlit as st
 font_path = "path/to/jameel_noori_nastaliq.ttf"
-st.title("سنی جماعت القرآن پاکستان")
+st.title("سنی جماعت القراء پاکستان")
 st.image("qari.png", caption="قاری عنایت اللہ سیالوی")
 
 st.title("قاری عنایت اللہ سیالوی صاحب کے صاحبزادگان")
